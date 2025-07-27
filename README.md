@@ -63,8 +63,13 @@ export default antfu({
         indent: 4,
         quotes: 'single',
     },
+    rules: {
+        'unicorn/filename-case': ['error', {
+            case: 'kebabCase',
+            ignore: ['README.md'],
+        }],
+    },
 });
-
 ```
 
 <details>
